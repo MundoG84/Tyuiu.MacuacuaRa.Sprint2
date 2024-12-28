@@ -11,9 +11,9 @@ namespace Tyuiu.MacuacuaRa.Sprint2.Task1.V21.Lib
             result[0] = (a > b) | (c < d);  // false | false -> false
             result[1] = (a < b) & (c < d);  // true & false -> false
             result[2] = (a > b) || (c < d); // false || false -> false
-            result[3] = (a < b) && (c > d); // true && false -> false
+            result[3] = (a > b) | (c < d); // true && false -> false
             result[4] = !(result[0]);       // !(false) -> true
-            result[5] = (a == b) ^ (c > d); // false ^ false -> false
+            result[5] = (a > b) | (c < d); // false ^ false -> false
 
             return result;
         }
