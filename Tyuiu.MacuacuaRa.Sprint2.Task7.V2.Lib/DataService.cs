@@ -9,7 +9,7 @@ namespace Tyuiu.MacuacuaRa.Sprint2.Task7.V2.Lib
 
             bool result;
 
-            if (x >= -1 && x <= 1 && y >= x/2 && y <= Math.Exp(x) && y <= Math.Exp(-x))
+            if (x >= -1 && x <= 1 && y >= x/2 && Math.Pow(x,2)+Math.Pow(y,2)<=1)
             {
                 result = true;
             }

@@ -8,15 +8,14 @@ namespace Tyuiu.MacuacuaRa.Sprint2.Task1.V21.Lib
         {
             bool[] result = new bool[6];
 
-            result[0] = (a == b) | (c != d);
-            result[1] = (a != b) & (c < d);
-            result[2] = (a < b) || (c > d);
-            result[3] = (a > b) && (c > d);
-            result[4] = !(result[0]);
-            result[5] = (a == b) ^ (c > d);
+            result[0] = (a > b) | (c < d);  // false | false -> false
+            result[1] = (a < b) & (c < d);  // true & false -> false
+            result[2] = (a > b) || (c < d); // false || false -> false
+            result[3] = (a < b) && (c > d); // true && false -> false
+            result[4] = !(result[0]);       // !(false) -> true
+            result[5] = (a == b) ^ (c > d); // false ^ false -> false
 
             return result;
         }
-
     }
 }
