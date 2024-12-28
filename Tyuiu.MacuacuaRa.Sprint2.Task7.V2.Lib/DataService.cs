@@ -11,11 +11,11 @@ namespace Tyuiu.MacuacuaRa.Sprint2.Task7.V2.Lib
 
             if (x >= -1 && x <= 1 && y >= x/2 && Math.Pow(x,2)+Math.Pow(y,2)<=1)
             {
-                result = true;
+                result = false;
             }
             else
             {
-                result = false;
+                result = true;
             }
             return result;
         }
